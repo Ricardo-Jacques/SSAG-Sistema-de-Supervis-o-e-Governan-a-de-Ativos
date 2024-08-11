@@ -1,0 +1,37 @@
+﻿header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #D9D9D9;
+    width: 100%;
+}
+
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    list-style: none;
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
+}
+
+.nav_header > a {
+    font-size: 1.3em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.perfil_usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 0px 10px 0px 0px;
+}
+
+.perfil_usuario > h2 {
+    font-size: 1.3em;
+    margin: 0;
+}
