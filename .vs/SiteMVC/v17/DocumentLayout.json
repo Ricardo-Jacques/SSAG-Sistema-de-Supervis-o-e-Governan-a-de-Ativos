@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "item.cs",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Models\\item.cs",
-              "RelativeDocumentMoniker": "Models\\item.cs",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Models\\item.cs",
-              "RelativeToolTip": "Models\\item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T15:58:08.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Dashboard\\index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Dashboard\\index.cshtml",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Dashboard\\index.cshtml",
-              "RelativeToolTip": "Views\\Dashboard\\index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADsAAAANAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC0AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-12T01:58:59.408Z",
+              "WhenOpened": "2024-08-12T17:25:18.357Z",
               "EditorCaption": ""
             }
           ]

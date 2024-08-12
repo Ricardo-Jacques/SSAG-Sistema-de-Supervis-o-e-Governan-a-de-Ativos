@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SiteMVC.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Usuários</h1>
+
+<p>
+    <a asp-action="Create">Adicionar Usuário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Senha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalEmprestimos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Atrasos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmprestimosAtivos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Senha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalEmprestimos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Atrasos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmprestimosAtivos)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idUsuario">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.idUsuario">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.idUsuario">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

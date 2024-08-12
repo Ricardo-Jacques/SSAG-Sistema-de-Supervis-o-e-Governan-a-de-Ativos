@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SiteMVC.Models;
 
 namespace SiteMVC.Models
 {
@@ -9,5 +10,6 @@ namespace SiteMVC.Models
 
         }
         public DbSet<Item> Items { get; set; }
+        public DbSet<SiteMVC.Models.Usuario> Usuario { get; set; } = default!;
     }
 }
