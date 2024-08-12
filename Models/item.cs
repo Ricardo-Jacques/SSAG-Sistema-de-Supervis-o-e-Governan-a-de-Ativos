@@ -6,7 +6,7 @@
         public string Nome { get; set; }
         public string Tipo { get; set; }
         public string Proprietario { get; set; }
-        public double Valor { get; set; }
+        public decimal Valor { get; set; }
         public string Estado { get; set; }
         public Item()
         {

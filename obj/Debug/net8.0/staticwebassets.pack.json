@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SiteMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
     },

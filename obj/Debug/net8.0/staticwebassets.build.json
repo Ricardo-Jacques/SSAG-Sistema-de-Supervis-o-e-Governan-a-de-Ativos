@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+tnTbwDKPEJKyhd6EUIi+8+cyEiabnXxIj0M1pSNykA=",
+  "Hash": "eU+gvR/+08DVVUAgR6ZwtQpjUyGzTbYEaXlEAV6NSBs=",
   "Source": "SiteMVC",
   "BasePath": "_content/SiteMVC",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Master\\source\\repos\\SiteMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SiteMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\dashboard.css",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "css/dashboard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\header.css",

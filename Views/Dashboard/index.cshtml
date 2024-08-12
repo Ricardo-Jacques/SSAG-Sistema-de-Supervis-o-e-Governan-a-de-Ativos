@@ -1,0 +1,107 @@
+﻿@using System.Data.SqlClient;
+
+@model SiteMVC.Models.Item
+
+@{
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+    ViewData["Title"] = "Dashboard";
+
+    int totalItens = 0;
+    int itensEmprestados = 0;
+    int itensDisponiveis = 0;
+    int itensDanificados = 0;
+    decimal valorPatrimonio = 0;
+
+    using (SqlConnection conexao = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=escoteiros_db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True"))
+    {
+        // Abre a conexão
+        conexao.Open();
+
+        var query = "SELECT COUNT(*) AS NumeroDeLinhas FROM items;";
+        using (SqlCommand comando = new SqlCommand(query, conexao))
+        {
+            using (SqlDataReader leitor = comando.ExecuteReader())
+            {
+                if (leitor.Read())
+                {
+                    totalItens = leitor.GetInt32(0);
+                }
+            }
+        }
+
+        query = "SELECT COUNT(*) AS NumeroDeLinhas FROM items WHERE estado = 'Emprestado';";
+        using (SqlCommand comando = new SqlCommand(query, conexao))
+        {
+            using (SqlDataReader leitor = comando.ExecuteReader())
+            {
+                if (leitor.Read())
+                {
+                    itensEmprestados = leitor.GetInt32(0);
+                }
+            }
+        }
+
+        query = "SELECT COUNT(*) AS NumeroDeLinhas FROM items WHERE estado = 'Disponível';";
+        using (SqlCommand comando = new SqlCommand(query, conexao))
+        {
+            using (SqlDataReader leitor = comando.ExecuteReader())
+            {
+                if (leitor.Read())
+                {
+                    itensDisponiveis = leitor.GetInt32(0);
+                }
+            }
+        }
+
+        query = "SELECT COUNT(*) AS NumeroDeLinhas FROM items WHERE estado = 'Danificado';";
+        using (SqlCommand comando = new SqlCommand(query, conexao))
+        {
+            using (SqlDataReader leitor = comando.ExecuteReader())
+            {
+                if (leitor.Read())
+                {
+                    itensDanificados = leitor.GetInt32(0);
+                }
+            }
+        }
+
+        query = "SELECT valor FROM items;";
+        using (SqlCommand comando = new SqlCommand(query, conexao))
+        {
+            using (SqlDataReader leitor = comando.ExecuteReader())
+            {
+                decimal soma = 0;
+                while (leitor.Read())
+                {
+                    soma = leitor.GetDecimal(0) + soma;
+                }
+                valorPatrimonio = soma;
+            }
+        }
+    }
+}
+
+<h1>Dashboard</h1>
+
+<section class="dashboard">
+    <div>
+        <h2>Total de itens</h2>
+        <p>@totalItens</p>
+    </div>
+    <div>
+        <h2>Itens emprestados</h2>
+        <p>@itensEmprestados</p>
+    </div>
+    <div>
+        <h2>Itens no estoque</h2>
+        <p>@itensDisponiveis</p>
+    </div>
+    <div>
+        <h2>Itens com alterações</h2>
+        <p>@itensDanificados</p>
+    </div>
+    <div>
+        <h2>Valor do patrimônio</h2>
+        <p>R$@valorPatrimonio</p>
+    </div>
+</section>
