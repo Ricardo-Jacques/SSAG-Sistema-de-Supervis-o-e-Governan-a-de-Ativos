@@ -1,0 +1,21 @@
+﻿.form_emprestimo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.form_emprestimo > button {
+    background-color: #024CDB;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px 15px 8px 15px;
+}
+
+.campo_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+}

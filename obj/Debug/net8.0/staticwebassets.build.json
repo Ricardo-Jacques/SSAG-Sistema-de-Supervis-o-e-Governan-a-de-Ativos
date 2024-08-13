@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eU+gvR/+08DVVUAgR6ZwtQpjUyGzTbYEaXlEAV6NSBs=",
+  "Hash": "7NoVHCT0eeSdV+XjTxeHikpi9KvfcSxeISbgD+wsRQA=",
   "Source": "SiteMVC",
   "BasePath": "_content/SiteMVC",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\emprestimo.css",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "css/emprestimo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\emprestimo.css"
     },
     {
       "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\header.css",
