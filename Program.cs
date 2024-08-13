@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using SiteMVC.Models;
 
@@ -10,6 +11,16 @@ builder.Services.AddDbContext<Contexto>
     (options => options .UseSqlServer(
         "Data Source=localhost\\SQLEXPRESS;Initial Catalog=escoteiros_db;Integrated Security=True;Encrypt=True;Trust Server Certificate=True"));
 
+// Configurar autenticação baseada em cookies
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/login";
+        options.LogoutPath = "/Account/Logout";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        options.SlidingExpiration = true;
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,12 +31,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Configurar o pipeline de requisição
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication(); // Habilita autenticação
+app.UseAuthorization();  // Habilita autorização
 
 app.MapControllerRoute(
     name: "default",

@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SiteMVC.Models;
 
 namespace SiteMVC.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ItemsController : Controller
     {
         private readonly Contexto _context;

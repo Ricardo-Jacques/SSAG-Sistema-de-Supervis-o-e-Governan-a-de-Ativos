@@ -32,6 +32,9 @@ namespace SiteMVC.Models
         [Display(Name = "Empréstimos ativos")]
         public int EmprestimosAtivos { get; set; }
 
+        [Column("tipoUsuario")]
+        [Display(Name = "Tipo de usuário")]
+        public string TipoUsuario { get; set; } // "Admin" ou "User"
         public Usuario()
         {
 

@@ -23,15 +23,18 @@
     text-decoration: none;
 }
 
-.perfil_usuario {
+.perfil {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 200px;
-    padding: 0px 10px 0px 0px;
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.perfil_usuario > h2 {
+.perfil > div > h2 {
     font-size: 1.3em;
     margin: 0;
 }

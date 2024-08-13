@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿let perfilUsuario = document.querySelector('.perfil');
+let botaoLogin = document.querySelector('#botaoLogin');
 
-// Write your JavaScript code.
+perfilUsuario.addEventListener('click', function () {
+    if (botaoLogin.style.display === 'none' || botaoLogin.style.display === '') {
+        botaoLogin.style.display = 'block';
+    } else {
+        botaoLogin.style.display = 'none';
+    }
+});

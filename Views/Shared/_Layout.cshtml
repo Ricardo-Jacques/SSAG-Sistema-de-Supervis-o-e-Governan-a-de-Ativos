@@ -13,7 +13,6 @@
     <header>
         <nav>
             <ul class="nav_header">
-                <a asp-controller="Home" asp-action="index">Home</a>
                 <a asp-controller="Items" asp-action="index">Estoque</a>
                 <a asp-controller="" asp-action="">Solicitações</a>
                 <a asp-controller="Dashboard" asp-action="index">Dashboard</a>
@@ -21,8 +20,13 @@
                 <a asp-controller="" asp-action="">Histórico</a>
             </ul>
         </nav>
-        <div class="perfil_usuario">
-            <h2>Administrador</h2>
+        <div class="perfil">
+            <div class="usuario">
+                <h2>@User.Identity.Name</h2>
+                <form id="botaoLogin" asp-controller="Account" asp-action="Logout" method="post" style="display:none;">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
