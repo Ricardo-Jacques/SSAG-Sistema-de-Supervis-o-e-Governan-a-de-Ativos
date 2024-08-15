@@ -36,6 +36,7 @@ namespace SiteMVC.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.NomeUsuario),
+                    new Claim("UserId", user.idUsuario.ToString()),
                     new Claim(ClaimTypes.Role, user.TipoUsuario)
                 };
 

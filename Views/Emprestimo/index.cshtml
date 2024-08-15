@@ -1,17 +1,15 @@
-﻿<link rel="stylesheet" href="~/css/emprestimo.css" asp-append-version="true" />
-
-<form class="form_emprestimo" asp-action="Emprestimo" method="post">
+﻿<form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
     <div class="campo_form">
         <label for="item">Item desejado</label>
-        <input type="text" name="item" required />
+        <input type="text" name="Item" required />
     </div>
     <div class="campo_form">
         <label for="tipo">Tipo</label>
-        <input type="text" name="tipo" required />
+        <input type="text" name="TipoItem" required />
     </div>
     <div class="campo_form">
         <label for="id">Identificação</label>
-        <input type="text" name="item" required />
+        <input type="text" name="IdItem" required />
     </div>
     <button type="submit">SOLICITAR EMPRÉSTIMO</button>
 </form>

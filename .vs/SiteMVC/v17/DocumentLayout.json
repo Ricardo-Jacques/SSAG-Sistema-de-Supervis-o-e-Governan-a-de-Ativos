@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\models\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:models\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAABUAAAARAAAA",
+              "DocumentIndex": 1,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Emprestimo\\index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Emprestimo\\index.cshtml",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Emprestimo\\index.cshtml",
+              "RelativeToolTip": "Views\\Emprestimo\\index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-13T16:22:01.787Z",
+              "WhenOpened": "2024-08-15T03:18:04.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmprestimoController.cs",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\EmprestimoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmprestimoController.cs",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\EmprestimoController.cs",
+              "RelativeToolTip": "Controllers\\EmprestimoController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAASwCEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T02:16:52.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Emprestimo.cs",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Models\\Emprestimo.cs",
+              "RelativeDocumentMoniker": "Models\\Emprestimo.cs",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Models\\Emprestimo.cs",
+              "RelativeToolTip": "Models\\Emprestimo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T02:20:46.773Z",
               "EditorCaption": ""
             }
           ]
