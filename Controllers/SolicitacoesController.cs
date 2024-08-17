@@ -48,6 +48,16 @@ namespace SiteMVC.Controllers
                     comando.ExecuteNonQuery();
                 }
 
+                var query3 = "UPDATE usuarios SET totalEmprestimos = totalEmprestimos + 1, " +
+                   "emprestimosAtivos = emprestimosAtivos + 1 FROM usuarios " +
+                   "JOIN solicitacoes ON solicitacoes.idUsuario = usuarios.idUsuario " +
+                   "WHERE usuarios.idUsuario = solicitacoes.idUsuario;";
+
+                using (SqlCommand comando = new SqlCommand(query3, conexao))
+                {
+                    comando.ExecuteNonQuery();
+                }
+
             }
             return RedirectToAction("Index");
         }
@@ -74,6 +84,15 @@ namespace SiteMVC.Controllers
                     "WHERE items.id = solicitacoes.idItem;";
 
                 using (SqlCommand comando = new SqlCommand(query2, conexao))
+                {
+                    comando.ExecuteNonQuery();
+                }
+
+                var query3 = "UPDATE usuarios SET emprestimosAtivos = emprestimosAtivos - 1 FROM usuarios " +
+                   "JOIN solicitacoes ON solicitacoes.idUsuario = usuarios.idUsuario " +
+                   "WHERE usuarios.idUsuario = solicitacoes.idUsuario;";
+
+                using (SqlCommand comando = new SqlCommand(query3, conexao))
                 {
                     comando.ExecuteNonQuery();
                 }
