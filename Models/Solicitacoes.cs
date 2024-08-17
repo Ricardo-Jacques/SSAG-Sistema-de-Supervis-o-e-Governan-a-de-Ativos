@@ -13,8 +13,13 @@ namespace SiteMVC.Models
         public string Item { get; set; }
         public string TipoItem { get; set; }
         public int IdItem { get; set; }
-        public DateTime DataEmprestimo { get; set; }
-        public DateTime DataDevolucao { get; set; }
+        public DateTime? DataEmprestimo { get; set; }
+        public DateTime? DataDevolucao { get; set; }
         public string Status { get; set; }
+
+        public Solicitacoes()
+        {
+
+        }
     }
 }

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\controllers\\solicitacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:controllers\\solicitacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:controllers\\emprestimocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\models\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:models\\emprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Emprestimo\\index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Emprestimo\\index.cshtml",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Emprestimo\\index.cshtml",
-              "RelativeToolTip": "Views\\Emprestimo\\index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-15T03:18:04.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "EmprestimoController.cs",
               "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\EmprestimoController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmprestimoController.cs",
               "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\EmprestimoController.cs",
               "RelativeToolTip": "Controllers\\EmprestimoController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAASwCEAAAA3AAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAiwDwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T02:16:52.729Z",
+              "WhenOpened": "2024-08-16T22:33:13.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Emprestimo.cs",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Models\\Emprestimo.cs",
-              "RelativeDocumentMoniker": "Models\\Emprestimo.cs",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Models\\Emprestimo.cs",
-              "RelativeToolTip": "Models\\Emprestimo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "DocumentIndex": 0,
+              "Title": "SolicitacoesController.cs",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\SolicitacoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SolicitacoesController.cs",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\SolicitacoesController.cs",
+              "RelativeToolTip": "Controllers\\SolicitacoesController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAEkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T02:20:46.773Z",
+              "WhenOpened": "2024-08-15T21:33:38.288Z",
               "EditorCaption": ""
             }
           ]

@@ -11,6 +11,6 @@ namespace SiteMVC.Models
         }
         public DbSet<Item> Items { get; set; }
         public DbSet<SiteMVC.Models.Usuario> Usuario { get; set; }
-        public DbSet<Solicitacoes> Solicitacoes { get; set; }
+        public DbSet<SiteMVC.Models.Solicitacoes> Solicitacoes { get; set; }
     }
 }

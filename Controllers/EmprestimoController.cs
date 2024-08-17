@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SiteMVC.Models;
 using System.Data.SqlClient;
 
@@ -8,10 +9,19 @@ namespace SiteMVC.Controllers
     [Authorize]
     public class EmprestimoController : Controller
     {
+        private readonly Contexto _context;
+
+        public EmprestimoController(Contexto context)
+        {
+            _context = context;
+        }
+
         // Método para exibir o formulário
         public IActionResult Index()
         {
-            return View();
+            var itens = _context.Items.ToList(); // Busque os itens do banco de dados ou qualquer outra fonte de dados.
+            return View(itens);
+
         }
 
         // Método POST para processar o envio do formulário
@@ -31,11 +41,10 @@ namespace SiteMVC.Controllers
                 string item = emprestimo.Item;
                 string tipoItem = emprestimo.TipoItem;
                 int idItem = emprestimo.IdItem;
-                DateTime dataEmprestimo = DateTime.Now;
 
-                // Query SQL com parâmetros
-                var query = "INSERT INTO solicitacoes (usuario, idUsuario, item, tipoItem, idItem, dataEmprestimo, status) " +
-                            "VALUES (@usuario, @idUsuario, @item, @tipoItem, @idItem, @dataEmprestimo, 'Emprestado')";
+                // Cria uma nova solicitação
+                var query = "INSERT INTO solicitacoes (usuario, idUsuario, item, tipoItem, idItem, status) " +
+                            "VALUES (@usuario, @idUsuario, @item, @tipoItem, @idItem, 'Aguardando aprovação')";
 
                 using (SqlCommand comando = new SqlCommand(query, conexao))
                 {
@@ -45,13 +54,11 @@ namespace SiteMVC.Controllers
                     comando.Parameters.AddWithValue("@item", item);
                     comando.Parameters.AddWithValue("@tipoItem", tipoItem);
                     comando.Parameters.AddWithValue("@idItem", idItem);
-                    comando.Parameters.AddWithValue("@dataEmprestimo", dataEmprestimo);
 
-                    // Executa o comando SQL
                     comando.ExecuteNonQuery();
                 }
 
-                return RedirectToAction("Index"); // Redireciona para a página inicial após o envio
+                return RedirectToAction("Index"); 
             }
         }
     }

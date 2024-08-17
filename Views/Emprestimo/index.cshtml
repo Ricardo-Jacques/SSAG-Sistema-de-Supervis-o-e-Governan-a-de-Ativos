@@ -1,15 +1,32 @@
-﻿<form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
+﻿@model IEnumerable<SiteMVC.Models.Item>
+
+<form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
     <div class="campo_form">
         <label for="item">Item desejado</label>
-        <input type="text" name="Item" required />
+        <select name="Item" required>
+            @foreach (var item in Model)
+            {
+                <option value="@item.Nome">@item.Nome</option>
+            }
+        </select>
     </div>
     <div class="campo_form">
         <label for="tipo">Tipo</label>
-        <input type="text" name="TipoItem" required />
+        <select name="TipoItem" required>
+            @foreach (var item in Model)
+            {
+                <option value="@item.Tipo">@item.Tipo</option>
+            }
+        </select>
     </div>
     <div class="campo_form">
-        <label for="id">Identificação</label>
-        <input type="text" name="IdItem" required />
+        <label for="id">ID do item</label>
+        <select name="IdItem" required>
+            @foreach (var item in Model)
+            {
+                <option value="@item.Id">@item.Id</option>
+            }
+        </select>
     </div>
     <button type="submit">SOLICITAR EMPRÉSTIMO</button>
 </form>

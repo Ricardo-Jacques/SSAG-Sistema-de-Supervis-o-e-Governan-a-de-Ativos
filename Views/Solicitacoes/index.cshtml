@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SiteMVC.Models.Solicitacoes>
+
+@{
+    ViewData["Title"] = "Solicitações";
+}
+
+<h1>Solicitações</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdSolicitacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataEmprestimo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataDevolucao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var solicitacao in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.IdSolicitacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.Usuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.IdUsuario)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.Item)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.TipoItem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.IdItem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.DataEmprestimo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.DataDevolucao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelSolicitacoes => solicitacao.Status)
+                </td>
+                <td>
+                    <a asp-action="Aprovar" asp-route-id="@solicitacao.IdSolicitacao">Aprovar solicitação</a> |
+                    <a asp-action="Encerrar" asp-route-id="@solicitacao.IdSolicitacao">Encerrar solicitação</a> |
+                    <a asp-action="Details" asp-route-id="@solicitacao.IdSolicitacao">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@solicitacao.IdSolicitacao">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
