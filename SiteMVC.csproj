@@ -9,6 +9,7 @@
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\Solicitacoes\Details.cshtml" />
     <_ContentIncludedByDefault Remove="wwwroot\css\header.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\login.css" />
   </ItemGroup>
 
   <ItemGroup>
