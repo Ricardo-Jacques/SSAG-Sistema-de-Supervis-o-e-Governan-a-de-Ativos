@@ -7869,24 +7869,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\holyf\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Master\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\SiteMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Master\\source\\repos\\SiteMVC\\SiteMVC.csproj",
       "projectName": "SiteMVC",
-      "projectPath": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\SiteMVC.csproj",
-      "packagesPath": "C:\\Users\\holyf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\obj\\",
+      "projectPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\SiteMVC.csproj",
+      "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\holyf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

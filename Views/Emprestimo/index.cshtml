@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<SiteMVC.Models.Item>
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
 
+<section class="login">
 <form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
     <div class="campo_form">
         <label for="item">Item desejado</label>
@@ -30,3 +32,4 @@
     </div>
     <button type="submit">SOLICITAR EMPRÉSTIMO</button>
 </form>
+</section>
