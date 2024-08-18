@@ -9,11 +9,11 @@ namespace SiteMVC.Models
     {
         [Key]
         [Column("idUsuario")]
-        [Display(Name = "Id do usuário")]
+        [Display(Name = "ID do usuário")]
         public int idUsuario { get; set; }
 
         [Column("nomeUsuario")]
-        [Display(Name = "Usuario")]
+        [Display(Name = "Usuário")]
         public string NomeUsuario { get; set; }
 
         [Column("senha")]

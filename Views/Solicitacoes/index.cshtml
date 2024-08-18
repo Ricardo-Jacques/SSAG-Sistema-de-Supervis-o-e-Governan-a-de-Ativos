@@ -6,7 +6,9 @@
 
 <h1>Solicitações</h1>
 
-<table class="table">
+<input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
+
+<table class="table" id="tabela">
     <thead>
         <tr>
             <th>
@@ -41,11 +43,11 @@
     <tbody>
         @foreach (var solicitacao in Model)
         {
-            <tr>
+            <tr class="tr">
                 <td>
                     @Html.DisplayFor(modelSolicitacoes => solicitacao.IdSolicitacao)
                 </td>
-                <td>
+                <td class="nome">
                     @Html.DisplayFor(modelSolicitacoes => solicitacao.Usuario)
                 </td>
                 <td>

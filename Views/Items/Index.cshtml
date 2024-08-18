@@ -9,7 +9,10 @@
 <p>
     <a asp-action="Create">Adicionar item</a>
 </p>
-<table class="table">
+
+<input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
+
+<table class="table" id="tabela">
     <thead>
         <tr>
             <th>
@@ -35,11 +38,11 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="tr">
                 <td>
                     @Html.DisplayFor(modelItem => item.Id)
                 </td>
-                <td>
+                <td class="nome">
                     @Html.DisplayFor(modelItem => item.Nome)
                 </td>
                 <td>
