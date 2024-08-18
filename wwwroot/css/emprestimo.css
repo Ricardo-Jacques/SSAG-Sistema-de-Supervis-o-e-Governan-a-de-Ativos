@@ -1,32 +1,43 @@
-﻿/* Estilizar o formulário de empréstimo */
-.form_emprestimo {
+﻿/* Centralizar a section de login */
+.emprestimo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    min-height: 100vh; /* A seção ocupará a altura total da janela */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 100%;
-    max-width: 500px; /* Largura máxima do formulário */
-    margin: 0 auto;
 }
 
-/* Estilizar os campos do formulário */
-.campo_form {
-    margin-bottom: 15px;
-    width: 100%;
-}
+    /* Estilizar o formulário */
+    .emprestimo h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-    .campo_form label {
+    .emprestimo form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        width: 100%;
+        max-width: 400px; /* Largura máxima do formulário */
+    }
+
+        /* Estilizar os labels e inputs */
+        .emprestimo form div {
+            margin-bottom: 15px;
+        }
+
+    .emprestimo label {
         display: block;
         margin-bottom: 5px;
         font-weight: bold;
         color: #555;
     }
 
-    .campo_form select {
+    .emprestimo input[type="text"],
+    .emprestimo input[type="password"] {
         width: 100%;
         padding: 10px;
         border: 1px solid #ddd;
@@ -35,24 +46,30 @@
         transition: border-color 0.3s ease;
     }
 
-        .campo_form select:focus {
-            border-color: #007bff; /* Cor da borda ao focar no select */
+        .emprestimo input[type="text"]:focus,
+        .emprestimo input[type="password"]:focus {
+            border-color: #007bff; /* Cor da borda ao focar no input */
         }
 
-/* Estilizar o botão de solicitação de empréstimo */
-.form_emprestimo button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-    .form_emprestimo button[type="submit"]:hover {
-        background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    /* Estilizar o botão de login */
+    .emprestimo button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
+
+        .login button[type="submit"]:hover {
+            background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+        }
+
+    /* Estilizar a mensagem de erro */
+.emprestimo p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}

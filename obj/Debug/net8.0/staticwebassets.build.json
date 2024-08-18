@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rKOkhmCJ3RRpsL/arzdZf4yCTfoA6zaldjhuJ3Rr268=",
+  "Hash": "3dWyCalgUnJtzd0yV7ZZn4WZeS7UtP0yEJxw475t/KE=",
   "Source": "SiteMVC",
   "BasePath": "_content/SiteMVC",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\emprestimo.js",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "js/emprestimo.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\emprestimo.js"
     },
     {
       "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\site.js",

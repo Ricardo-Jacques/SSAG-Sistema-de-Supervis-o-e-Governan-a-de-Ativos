@@ -1,35 +1,41 @@
 ﻿@model IEnumerable<SiteMVC.Models.Item>
-<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
 
-<section class="login">
-<form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
-    <div class="campo_form">
-        <label for="item">Item desejado</label>
-        <select name="Item" required>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Nome">@item.Nome</option>
-            }
-        </select>
-    </div>
-    <div class="campo_form">
-        <label for="tipo">Tipo</label>
-        <select name="TipoItem" required>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Tipo">@item.Tipo</option>
-            }
-        </select>
-    </div>
-    <div class="campo_form">
-        <label for="id">ID do item</label>
-        <select name="IdItem" required>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Id">@item.Id</option>
-            }
-        </select>
-    </div>
-    <button type="submit">SOLICITAR EMPRÉSTIMO</button>
-</form>
+<link rel="stylesheet" href="~/css/emprestimo.css" asp-append-version="true" />
+
+<section class="emprestimo">
+    <h2>Escolha o item que deseja solicitar</h2>
+    <form class="form_emprestimo" asp-action="CriarEmprestimo" method="post" onsubmit="return validarFormulario()">
+        <div class="campo_form">
+            <label for="tipo">Tipo</label>
+            <select id="tipoItem" name="TipoItem" required onchange="filtrarItens()">
+                <option value="">Selecione um tipo</option>
+                @foreach (var tipo in Model.Select(m => m.Tipo).Distinct())
+                {
+                    <option value="@tipo">@tipo</option>
+                }
+            </select>
+        </div>
+        <div class="campo_form">
+            <label for="item">Item desejado</label>
+            <select id="itemDesejado" name="Item" required onchange="filtrarIds()">
+                <option value="">Selecione um item</option>
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Nome" data-tipo="@item.Tipo" data-estado="@item.Estado">@item.Nome</option>
+                }
+            </select>
+        </div>
+        <div class="campo_form">
+            <label for="id">ID do item</label>
+            <select id="idItem" name="IdItem" required>
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Id" data-item="@item.Nome" data-estado="@item.Estado">@item.Id</option>
+                }
+            </select>
+        </div>
+        <button type="submit">SOLICITAR EMPRÉSTIMO</button>
+    </form>
 </section>
+
+<script src="~/js/emprestimo.js" asp-append-version="true"></script>
