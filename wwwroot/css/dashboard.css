@@ -1,24 +1,44 @@
-﻿.dashboard {
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.dashboard {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 5px;
 }
 
-.dashboard > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
-    border: 1px solid #000000;
-    box-shadow: 3px 4px 5px #00000094;
-    margin: 10px 10px 0px 0px;
-}
+    .dashboard div {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 150%;
+        height: auto; /* Ajusta a altura de acordo com o conteúdo */
+        max-width: 450px; /* Limita a largura máxima */
+        text-align: center;
+    }
 
-.dashboard > div > h2 {
-    font-size: 1.6em;
-}
+    .dashboard h2 {
+        font-size: 1.2em;
+        color: #666;
+        margin-bottom: 10px;
+    }
 
-.dashboard > div > p {
-    font-size: 2.5em
-}
+    .dashboard p {
+        font-size: 2em;
+        color: #000;
+        margin: 0;
+    }

@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
+  "WorkspaceRootPath": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\wwwroot\\css\\emprestimo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\holyf\\onedrive\\documentos\\github\\gear14-bis\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\holyf\\onedrive\\documentos\\github\\gear14-bis\\wwwroot\\css\\emprestimo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:wwwroot\\css\\emprestimo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\holyf\\onedrive\\documentos\\github\\gear14-bis\\views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\emprestimo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -18,33 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\dashboard.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\dashboard.css",
+              "ToolTip": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\dashboard.css",
+              "RelativeToolTip": "wwwroot\\css\\dashboard.css",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAswA4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-18T21:02:13.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "emprestimo.css",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\emprestimo.css",
+              "DocumentMoniker": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\emprestimo.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\emprestimo.css",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\emprestimo.css",
+              "ToolTip": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\emprestimo.css",
               "RelativeToolTip": "wwwroot\\css\\emprestimo.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-08-18T20:49:56.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Emprestimo\\index.cshtml",
+              "DocumentMoniker": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\Views\\Emprestimo\\index.cshtml",
               "RelativeDocumentMoniker": "Views\\Emprestimo\\index.cshtml",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Emprestimo\\index.cshtml",
+              "ToolTip": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\Views\\Emprestimo\\index.cshtml",
               "RelativeToolTip": "Views\\Emprestimo\\index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-18T20:39:56.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-18T20:39:56.488Z"
             }
           ]
         }
