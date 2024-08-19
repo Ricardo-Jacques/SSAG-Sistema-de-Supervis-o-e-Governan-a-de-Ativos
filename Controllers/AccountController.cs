@@ -24,6 +24,11 @@ namespace SiteMVC.Controllers
             return View();
         }
 
+        public IActionResult TelaLogin()
+        {
+            return RedirectToAction("login");
+        }
+
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {

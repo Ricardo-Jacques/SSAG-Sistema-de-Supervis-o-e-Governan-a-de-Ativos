@@ -12,7 +12,6 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="idUsuario" />
             <div class="form-group">
                 <label asp-for="NomeUsuario" class="control-label"></label>
                 <input asp-for="NomeUsuario" class="form-control" />
@@ -22,21 +21,6 @@
                 <label asp-for="Senha" class="control-label"></label>
                 <input asp-for="Senha" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="TotalEmprestimos" class="control-label"></label>
-                <input asp-for="TotalEmprestimos" class="form-control" />
-                <span asp-validation-for="TotalEmprestimos" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Atrasos" class="control-label"></label>
-                <input asp-for="Atrasos" class="form-control" />
-                <span asp-validation-for="Atrasos" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EmprestimosAtivos" class="control-label"></label>
-                <input asp-for="EmprestimosAtivos" class="form-control" />
-                <span asp-validation-for="EmprestimosAtivos" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Salvar" class="btn btn-primary" />

@@ -24,10 +24,6 @@ namespace SiteMVC.Models
         [Display(Name = "Total de empréstimos")]
         public int TotalEmprestimos { get; set; }
 
-        [Column("atrasos")]
-        [Display(Name = "Atrasos")]
-        public int Atrasos { get; set; }
-
         [Column("emprestimosAtivos")]
         [Display(Name = "Empréstimos ativos")]
         public int EmprestimosAtivos { get; set; }

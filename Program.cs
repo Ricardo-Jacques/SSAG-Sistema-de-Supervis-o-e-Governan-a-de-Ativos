@@ -41,7 +41,7 @@ app.UseAuthorization();  // Habilita autorização
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=login}/{id?}");
+    pattern: "{controller=Account}/{action=TelaLogin}");
 
 app.Run();
 

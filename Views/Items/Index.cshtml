@@ -6,9 +6,13 @@
 
 <h1>Estoque</h1>
 
-<p>
-    <a asp-action="Create">Adicionar item</a>
-</p>
+
+@if (User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create">Adicionar item</a>
+    </p>
+}
 
 <input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
 
@@ -57,11 +61,14 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Estado)
                 </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
-                </td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                    </td>
+                }
             </tr>
         }
     </tbody>

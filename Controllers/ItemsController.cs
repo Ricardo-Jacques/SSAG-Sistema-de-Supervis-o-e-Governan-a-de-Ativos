@@ -5,7 +5,7 @@ using SiteMVC.Models;
 
 namespace SiteMVC.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class ItemsController : Controller
     {
         private readonly Contexto _context;
