@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\tabelas.css",
+      "PackagePath": "staticwebassets\\css\\tabelas.css"
+    },
+    {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

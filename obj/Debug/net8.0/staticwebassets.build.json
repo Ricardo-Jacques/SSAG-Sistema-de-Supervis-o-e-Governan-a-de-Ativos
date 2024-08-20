@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3dWyCalgUnJtzd0yV7ZZn4WZeS7UtP0yEJxw475t/KE=",
+  "Hash": "l8UJoX+fm9u8ZlxXsJEgdFFg+r7kQySf0sJOaH1CGWQ=",
   "Source": "SiteMVC",
   "BasePath": "_content/SiteMVC",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\tabelas.css",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "css/tabelas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\tabelas.css"
     },
     {
       "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\favicon.ico",
