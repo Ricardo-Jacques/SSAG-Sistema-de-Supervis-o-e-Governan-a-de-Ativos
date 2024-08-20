@@ -27,7 +27,9 @@ namespace SiteMVC.Controllers
         {
             using (SqlConnection conexao = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=escoteiros_db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True"))
             {
-                conexao.Open();
+                await conexao.OpenAsync();
+
+                // Atualiza a solicitação para 'Emprestado'
                 var query = "UPDATE solicitacoes SET dataEmprestimo = @data, status = 'Emprestado' WHERE idSolicitacao = @id";
                 DateTime data = DateTime.Now;
 
@@ -36,38 +38,42 @@ namespace SiteMVC.Controllers
                     comando.Parameters.AddWithValue("@id", id);
                     comando.Parameters.AddWithValue("@data", data);
 
-                    comando.ExecuteNonQuery();
+                    await comando.ExecuteNonQueryAsync();
                 }
 
-                var query2 = "UPDATE items SET estado = 'Emprestado' FROM items " +
-                    "JOIN solicitacoes ON solicitacoes.idItem = items.id " +
-                    "WHERE items.id = solicitacoes.idItem;";
+                // Atualiza o estado do item relacionado à solicitação aprovada
+                var query2 = "UPDATE items SET estado = 'Emprestado' " +
+                             "WHERE id = (SELECT idItem FROM solicitacoes WHERE idSolicitacao = @id)";
 
                 using (SqlCommand comando = new SqlCommand(query2, conexao))
                 {
-                    comando.ExecuteNonQuery();
+                    comando.Parameters.AddWithValue("@id", id);
+                    await comando.ExecuteNonQueryAsync();
                 }
 
+                // Atualiza o total de empréstimos e empréstimos ativos do usuário relacionado à solicitação
                 var query3 = "UPDATE usuarios SET totalEmprestimos = totalEmprestimos + 1, " +
-                   "emprestimosAtivos = emprestimosAtivos + 1 FROM usuarios " +
-                   "JOIN solicitacoes ON solicitacoes.idUsuario = usuarios.idUsuario " +
-                   "WHERE usuarios.idUsuario = solicitacoes.idUsuario;";
+                   "emprestimosAtivos = emprestimosAtivos + 1 " +
+                   "WHERE idUsuario = (SELECT idUsuario FROM solicitacoes WHERE idSolicitacao = @id)";
 
                 using (SqlCommand comando = new SqlCommand(query3, conexao))
                 {
-                    comando.ExecuteNonQuery();
+                    comando.Parameters.AddWithValue("@id", id);
+                    await comando.ExecuteNonQueryAsync();
                 }
-
             }
+
             return RedirectToAction("Index");
         }
+
 
         //Encerrar solicitação
         public async Task<IActionResult> Encerrar(int? id)
         {
             using (SqlConnection conexao = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=escoteiros_db;Integrated Security=True;Encrypt=True;TrustServerCertificate=True"))
             {
-                conexao.Open();
+                await conexao.OpenAsync(); // Abre a conexão de forma assíncrona
+
                 var query = "UPDATE solicitacoes SET dataDevolucao = @data, status = 'Encerrado/Devolvido' WHERE idSolicitacao = @id";
                 DateTime data = DateTime.Now;
 
@@ -76,27 +82,30 @@ namespace SiteMVC.Controllers
                     comando.Parameters.AddWithValue("@id", id);
                     comando.Parameters.AddWithValue("@data", data);
 
-                    comando.ExecuteNonQuery();
+                    await comando.ExecuteNonQueryAsync(); // Executa a consulta de forma assíncrona
                 }
 
-                var query2 = "UPDATE items SET estado = 'Disponível' FROM items " +
-                    "JOIN solicitacoes ON solicitacoes.idItem = items.id " +
-                    "WHERE items.id = solicitacoes.idItem;";
+                var query2 = "UPDATE items SET estado = 'Disponível' " +
+                              "WHERE id = (SELECT idItem FROM solicitacoes WHERE idSolicitacao = @id)";
 
                 using (SqlCommand comando = new SqlCommand(query2, conexao))
                 {
-                    comando.ExecuteNonQuery();
+                    comando.Parameters.AddWithValue("@id", id);
+
+                    await comando.ExecuteNonQueryAsync(); // Executa a consulta de forma assíncrona
                 }
 
-                var query3 = "UPDATE usuarios SET emprestimosAtivos = emprestimosAtivos - 1 FROM usuarios " +
-                   "JOIN solicitacoes ON solicitacoes.idUsuario = usuarios.idUsuario " +
-                   "WHERE usuarios.idUsuario = solicitacoes.idUsuario;";
+                var query3 = "UPDATE usuarios SET emprestimosAtivos = emprestimosAtivos - 1 " +
+                   "WHERE idUsuario = (SELECT idUsuario FROM solicitacoes WHERE idSolicitacao = @id)";
 
                 using (SqlCommand comando = new SqlCommand(query3, conexao))
                 {
-                    comando.ExecuteNonQuery();
+                    comando.Parameters.AddWithValue("@id", id);
+
+                    await comando.ExecuteNonQueryAsync(); // Executa a consulta de forma assíncrona
                 }
             }
+
             return RedirectToAction("Index");
         }
 
