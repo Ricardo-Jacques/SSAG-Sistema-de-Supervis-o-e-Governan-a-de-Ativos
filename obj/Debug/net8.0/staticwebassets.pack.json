@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\tabelas.css",
+      "PackagePath": "staticwebassets\\css\\tabelas.css"
+    },
+    {
       "Id": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
