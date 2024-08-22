@@ -22,7 +22,7 @@ namespace SiteMVC.Models
         [Display(Name = "Proprietário")]
         public string Proprietario { get; set; }
 
-        [Column("valor")]
+        [Column("valor", TypeName = "decimal(6,2)")]
         [Display(Name = "Valor")]
         public decimal Valor { get; set; }
 

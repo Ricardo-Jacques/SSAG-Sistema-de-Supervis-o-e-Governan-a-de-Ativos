@@ -15,13 +15,13 @@ namespace SiteMVC.Controllers
             _context = context;
         }
 
-        // GET: Usuarios
+        // GET: Items
         public async Task<IActionResult> Index()
         {
             return View(await _context.Usuario.ToListAsync());
         }
 
-        // GET: Usuarios/Details/5
+        // GET: Items/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -30,7 +30,7 @@ namespace SiteMVC.Controllers
             }
 
             var usuario = await _context.Usuario
-                .FirstOrDefaultAsync(m => m.idUsuario == id);
+                .FirstOrDefaultAsync(m => m.IdUsuario == id);
             if (usuario == null)
             {
                 return NotFound();
@@ -39,21 +39,23 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Create
+        // GET: Items/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Usuarios/Create
+        // POST: Items/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdUsuario,NomeUsuario,Senha,TotalEmprestimos,EmprestimosAtivos,TipoUsuario")] Usuario usuario)
+        public async Task<IActionResult> Create(Usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                usuario.TipoUsuario = "User";
+
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -61,7 +63,7 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: Items/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -77,14 +79,14 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // POST: Usuarios/Edit/5
+        // POST: Items/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdUsuario,NomeUsuario,Senha,TotalEmprestimos,EmprestimosAtivos,TipoUsuario")] Usuario usuario)
+        public async Task<IActionResult> Edit(int idUsuario, Usuario usuario)
         {
-            if (id != usuario.idUsuario)
+            if (idUsuario != usuario.IdUsuario)
             {
                 return NotFound();
             }
@@ -93,12 +95,14 @@ namespace SiteMVC.Controllers
             {
                 try
                 {
+                    usuario.TipoUsuario = "User";
+
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UsuarioExists(usuario.idUsuario))
+                    if (!UsuarioExists(usuario.IdUsuario))
                     {
                         return NotFound();
                     }
@@ -112,7 +116,7 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Delete/5
+        // GET: Items/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -121,7 +125,7 @@ namespace SiteMVC.Controllers
             }
 
             var usuario = await _context.Usuario
-                .FirstOrDefaultAsync(m => m.idUsuario == id);
+                .FirstOrDefaultAsync(m => m.IdUsuario == id);
             if (usuario == null)
             {
                 return NotFound();
@@ -133,9 +137,9 @@ namespace SiteMVC.Controllers
         // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int idUsuario)
         {
-            var usuario = await _context.Usuario.FindAsync(id);
+            var usuario = await _context.Usuario.FindAsync(idUsuario);
             if (usuario != null)
             {
                 _context.Usuario.Remove(usuario);
@@ -147,7 +151,7 @@ namespace SiteMVC.Controllers
 
         private bool UsuarioExists(int id)
         {
-            return _context.Usuario.Any(e => e.idUsuario == id);
+            return _context.Usuario.Any(e => e.IdUsuario == id);
         }
     }
 }

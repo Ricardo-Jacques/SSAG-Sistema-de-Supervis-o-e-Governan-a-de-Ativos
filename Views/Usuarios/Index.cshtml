@@ -17,6 +17,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.NomeUsuario)
             </th>
             <th>
@@ -32,25 +35,28 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var usuario in Model)
         {
             <tr class="tr">
+                <td>
+                    @Html.DisplayFor(modelItem => usuario.IdUsuario)
+                </td>
                 <td class="nome">
-                    @Html.DisplayFor(modelItem => item.NomeUsuario)
+                    @Html.DisplayFor(modelItem => usuario.NomeUsuario)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Senha)
+                    @Html.DisplayFor(modelItem => usuario.Senha)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TotalEmprestimos)
+                    @Html.DisplayFor(modelItem => usuario.TotalEmprestimos)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.EmprestimosAtivos)
+                    @Html.DisplayFor(modelItem => usuario.EmprestimosAtivos)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.idUsuario">Editar</a> |
-                    <a asp-action="Details" asp-route-id="@item.idUsuario">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@item.idUsuario">Excluir</a>
+                    <a asp-action="Edit" asp-route-id="@usuario.IdUsuario">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@usuario.IdUsuario">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@usuario.IdUsuario">Excluir</a>
                 </td>
             </tr>
         }

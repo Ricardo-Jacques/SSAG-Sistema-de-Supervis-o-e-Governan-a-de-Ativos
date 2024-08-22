@@ -28,4 +28,8 @@
     <UpToDateCheckInput Remove="Views\Solicitacoes\Details.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

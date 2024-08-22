@@ -10,15 +10,15 @@ namespace SiteMVC.Models
         [Key]
         [Column("idUsuario")]
         [Display(Name = "ID do usuário")]
-        public int idUsuario { get; set; }
+        public int IdUsuario { get; set; }
 
         [Column("nomeUsuario")]
         [Display(Name = "Usuário")]
-        public string NomeUsuario { get; set; }
+        public string? NomeUsuario { get; set; }
 
         [Column("senha")]
         [Display(Name = "Senha")]
-        public string Senha { get; set; }
+        public string? Senha { get; set; }
 
         [Column("totalEmprestimos")]
         [Display(Name = "Total de empréstimos")]
@@ -30,10 +30,7 @@ namespace SiteMVC.Models
 
         [Column("tipoUsuario")]
         [Display(Name = "Tipo de usuário")]
-        public string TipoUsuario { get; set; } // "Admin" ou "User"
-        public Usuario()
-        {
-
-        }
+        public string? TipoUsuario { get; set; } // "Admin" ou "User"
+     
     }
 }
