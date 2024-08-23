@@ -8,6 +8,12 @@
 <h1>Solicitações</h1>
 
 <input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
+<select id="filtroStatus" onchange="filtrarTabelaPorStatus()">
+        <option value="">Todos os status</option>
+        <option value="Aguardando aprovação">Aguardando aprovação</option>
+        <option value="Emprestado">Emprestado</option>
+        <option value="Encerrado/Devolvido">Encerrado/Devolvido</option>
+</select>
 
 <table class="table" id="tabela">
     <thead>
@@ -69,7 +75,7 @@
                 <td>
                     @Html.DisplayFor(modelSolicitacoes => solicitacao.DataDevolucao)
                 </td>
-                <td>
+                <td class="status">
                     @Html.DisplayFor(modelSolicitacoes => solicitacao.Status)
                 </td>
                 <td>
@@ -91,3 +97,4 @@
         }
     </tbody>
 </table>
+<script src="~/js/solicitacoes.js" asp-append-version="true"></script>

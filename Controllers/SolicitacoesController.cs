@@ -110,15 +110,15 @@ namespace SiteMVC.Controllers
         }
 
         // GET: Solicitacoes/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? idSolicitacao)
         {
-            if (id == null)
+            if (idSolicitacao == null)
             {
                 return NotFound();
             }
 
             var solicitacao = await _context.Solicitacoes
-                .FirstOrDefaultAsync(m => m.IdSolicitacao == id);
+                .FirstOrDefaultAsync(m => m.IdSolicitacao == idSolicitacao);
             if (solicitacao == null)
             {
                 return NotFound();
@@ -148,9 +148,9 @@ namespace SiteMVC.Controllers
         // POST: Solicitacoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int idSolicitacao)
         {
-            var solicitacao = await _context.Solicitacoes.FindAsync(id);
+            var solicitacao = await _context.Solicitacoes.FindAsync(idSolicitacao);
             if (solicitacao != null)
             {
                 _context.Solicitacoes.Remove(solicitacao);
@@ -160,7 +160,7 @@ namespace SiteMVC.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ItemExists(int id)
+        private bool SolicitacaoExists(int id)
         {
             return _context.Solicitacoes.Any(e => e.IdSolicitacao == id);
         }

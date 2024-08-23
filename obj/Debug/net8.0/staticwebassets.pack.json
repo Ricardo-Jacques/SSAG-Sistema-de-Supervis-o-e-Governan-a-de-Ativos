@@ -37,8 +37,20 @@
       "PackagePath": "staticwebassets\\js\\emprestimo.js"
     },
     {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\estoque.js",
+      "PackagePath": "staticwebassets\\js\\estoque.js"
+    },
+    {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\solicitacoes.js",
+      "PackagePath": "staticwebassets\\js\\solicitacoes.js"
+    },
+    {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\usuarios.js",
+      "PackagePath": "staticwebassets\\js\\usuarios.js"
     },
     {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\lib\\bootstrap\\LICENSE",

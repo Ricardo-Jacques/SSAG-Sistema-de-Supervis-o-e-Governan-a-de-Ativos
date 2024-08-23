@@ -23,6 +23,7 @@ namespace SiteMVC.Models
         public string Proprietario { get; set; }
 
         [Column("valor", TypeName = "decimal(6,2)")]
+        [DataType(DataType.Currency)]
         [Display(Name = "Valor")]
         public decimal Valor { get; set; }
 
