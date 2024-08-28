@@ -38,3 +38,8 @@
     font-size: 1.3em;
     margin: 0;
 }
+
+form#botaologin {
+    padding: 0 !important;
+    background-color: #D9D9D9 !important;
+}

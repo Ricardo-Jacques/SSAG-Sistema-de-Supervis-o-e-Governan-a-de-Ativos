@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\wwwroot\\js\\estoque.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:wwwroot\\js\\estoque.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\items\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\items\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -25,48 +17,20 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Items\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Items\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Items\\Index.cshtml",
-              "RelativeToolTip": "Views\\Items\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T17:34:51.603Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "estoque.js",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\estoque.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\estoque.js",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\estoque.js",
-              "RelativeToolTip": "wwwroot\\js\\estoque.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-23T17:58:38.074Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAC0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-23T18:38:24.297Z",
+              "WhenOpened": "2024-08-28T21:24:50.572Z",
               "EditorCaption": ""
             }
           ]
