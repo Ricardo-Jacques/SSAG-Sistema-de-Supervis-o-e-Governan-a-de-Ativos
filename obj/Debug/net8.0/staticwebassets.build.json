@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Tgr22CvvNH5iRPcRg7Weo3qic2iqcyVhAs+/daedr2E=",
+  "Hash": "0kowKqkWtgHLnpz7OC4b+S3zgVL95N1wMrK10imoMAQ=",
   "Source": "SiteMVC",
   "BasePath": "_content/SiteMVC",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\header.css"
+    },
+    {
+      "Identity": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\items.css",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "css/items.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\items.css"
     },
     {
       "Identity": "C:\\Users\\holyf\\OneDrive\\Documentos\\GitHub\\GEAR14-BIS\\wwwroot\\css\\login.css",

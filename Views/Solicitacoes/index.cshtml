@@ -72,10 +72,25 @@
                     @Html.DisplayFor(modelSolicitacoes => solicitacao.Status)
                 </td>
                 <td>
-                    <a asp-action="Aprovar" asp-route-id="@solicitacao.IdSolicitacao">Aprovar solicitação</a> |
-                    <a asp-action="Encerrar" asp-route-id="@solicitacao.IdSolicitacao">Encerrar solicitação</a> |
-                    <a asp-action="Details" asp-route-id="@solicitacao.IdSolicitacao">Detalhes</a> |
-                    <a asp-action="Delete" asp-route-id="@solicitacao.IdSolicitacao">Excluir</a>
+                    @if (solicitacao.Status == "Aguardando Aprovação")
+{
+                        <a asp-action="Aprovar" asp-route-id="@solicitacao.IdSolicitacao">Aprovar solicitação</a> 
+                        <a asp-action="Details" asp-route-id="@solicitacao.IdSolicitacao">Detalhes</a> 
+                        <a asp-action="Delete" asp-route-id="@solicitacao.IdSolicitacao">Excluir</a>
+                    }
+                    else if (solicitacao.Status == "Emprestado")
+                    {
+                        <a asp-action="Encerrar" asp-route-id="@solicitacao.IdSolicitacao">Encerrar solicitação</a> 
+                        <a asp-action="Details" asp-route-id="@solicitacao.IdSolicitacao">Detalhes</a> 
+                        <a asp-action="Delete" asp-route-id="@solicitacao.IdSolicitacao">Excluir</a>
+                    }
+                     else if (solicitacao.Status == "Encerrado/Devolvido" || solicitacao.Status == "Devolvido")
+                    {
+                        <a asp-action="Details" asp-route-id="@solicitacao.IdSolicitacao">Detalhes</a> 
+                        <a asp-action="Delete" asp-route-id="@solicitacao.IdSolicitacao">Excluir</a>
+                    }
+
+
                 </td>
             </tr>
         }

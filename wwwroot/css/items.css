@@ -1,0 +1,91 @@
+﻿body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do título principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    color: #333; /* Cor do texto do título */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilização do subtítulo */
+h4 {
+    color: #555; /* Cor do texto do subtítulo */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilização da linha horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd; /* Cor da linha */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+/* Estilização do formulário */
+form {
+    background-color: white; /* Fundo branco para o formulário */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilização dos rótulos de controle */
+.form-group label {
+    font-weight: bold; /* Negrito nos rótulos */
+    color: #333; /* Cor do texto dos rótulos */
+}
+
+/* Estilização dos campos de entrada */
+.form-control {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna leve */
+}
+
+/* Estilização das mensagens de validação */
+.text-danger {
+    color: #d9534f; /* Cor vermelha para mensagens de erro */
+}
+
+/* Estilização do botão de submissão */
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indicador de clique */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+    /* Efeito ao passar o mouse sobre o botão */
+    .btn-primary:hover {
+        background-color: #0056b3; /* Escurece a cor do fundo no hover */
+    }
+
+/* Estilização do link "Voltar" */
+a {
+    color: #007bff; /* Cor azul para os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: inline-block; /* Exibe o link como bloco inline */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+    /* Efeito ao passar o mouse sobre o link */
+    a:hover {
+        text-decoration: underline; /* Sublinhado no hover */
+    }
+
+/* Estilização específica para a seção de scripts */
+@section Scripts {
+    margin-top: 20px; /* Espaçamento superior para a seção */
+}

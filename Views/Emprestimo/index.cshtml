@@ -2,34 +2,34 @@
 <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
 
 <section class="login">
-<form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
-    <div class="campo_form">
-        <label for="item">Item desejado</label>
-        <select name="Item" required>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Nome">@item.Nome</option>
-            }
-        </select>
-    </div>
-    <div class="campo_form">
-        <label for="tipo">Tipo</label>
-        <select name="TipoItem" required>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Tipo">@item.Tipo</option>
-            }
-        </select>
-    </div>
-    <div class="campo_form">
-        <label for="id">ID do item</label>
-        <select name="IdItem" required>
-            @foreach (var item in Model)
-            {
-                <option value="@item.Id">@item.Id</option>
-            }
-        </select>
-    </div>
-    <button type="submit">SOLICITAR EMPRÉSTIMO</button>
-</form>
+    <form class="form_emprestimo" asp-action="CriarEmprestimo" method="post">
+        <div class="campo_form">
+            <label for="item">Item desejado</label>
+            <select name="Item" required>
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Nome">@item.Nome</option>
+                }
+            </select>
+        </div>
+        <div class="campo_form">
+            <label for="tipo">Tipo</label>
+            <select name="TipoItem" required>
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Tipo">@item.Tipo</option>
+                }
+            </select>
+        </div>
+        <div class="campo_form">
+            <label for="id">ID do item</label>
+            <select name="IdItem" required>
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Id">@item.Id</option>
+                }
+            </select>
+        </div>
+        <button type="submit">SOLICITAR EMPRÉSTIMO</button>
+    </form>
 </section>
