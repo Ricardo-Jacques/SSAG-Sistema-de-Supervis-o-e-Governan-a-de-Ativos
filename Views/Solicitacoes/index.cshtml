@@ -48,7 +48,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var solicitacao in Model)
+        @foreach (var solicitacao in Model.OrderByDescending(solicitacao => solicitacao.IdSolicitacao))
         {
             <tr class="tr">
                 <td>

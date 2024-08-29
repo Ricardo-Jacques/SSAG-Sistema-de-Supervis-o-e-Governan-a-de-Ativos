@@ -16,6 +16,12 @@
 }
 
 <input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
+<select id="filtroPorEstado" onchange="filtrarTabela()">
+    <option value="">Todos os estados</option>
+    <option value="Disponível">Disponível</option>
+    <option value="Emprestado">Emprestado</option>
+    <option value="Danificado">Danificado</option>
+</select>
 
 <table class="table" id="tabela">
     <thead>
@@ -41,7 +47,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.OrderByDescending(item => item.Id))
         {
             <tr class="tr">
                 <td>
@@ -59,7 +65,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Valor)
                 </td>
-                <td>
+                <td class="estado">
                     @Html.DisplayFor(modelItem => item.Estado)
                 </td>
                 @if (User.IsInRole("Admin"))
