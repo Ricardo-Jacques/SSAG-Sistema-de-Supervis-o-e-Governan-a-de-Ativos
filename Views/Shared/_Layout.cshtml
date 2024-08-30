@@ -13,6 +13,7 @@
     @if (Context.Request.Path != "/Account/login")
     {
         <header>
+            <img src="~/images/logoSSAG.png" alt="Logo do sistema" class="logo_ssag">
             <nav>
                 <ul class="nav_header">
                     @if (User.IsInRole("Admin"))
@@ -25,17 +26,19 @@
                     <a asp-controller="Emprestimo" asp-action="index">Emprestimo</a>
                 </ul>
             </nav>
-            <div class="perfil">
-                <div class="usuario">
-                    <h2>@User.Identity.Name</h2>
-                    <form id="botaoLogin" asp-controller="Account" asp-action="Logout" method="post" style="display:none; background-color: #D9D9D9; padding: 0; box-shadow: 0 0 0 0;">
-                        <button type="submit">Logout</button>
-                    </form>
+            <div class="direita_header">
+                <div class="perfil">
+                    <div class="usuario">
+                        <h2>@User.Identity.Name</h2>
+                        <form id="botaoLogin" asp-controller="Account" asp-action="Logout" method="post" style="display:none; background-color: #D9D9D9; padding: 0; box-shadow: 0 0 0 0;">
+                            <button type="submit">Logout</button>
+                        </form>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                </svg>
             </div>
         </header>
     }
@@ -50,6 +53,10 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    @if (User.IsInRole("User"))
+    {
+        <script src="~/js/header.js" asp-append-version="true"></script>
+    }
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

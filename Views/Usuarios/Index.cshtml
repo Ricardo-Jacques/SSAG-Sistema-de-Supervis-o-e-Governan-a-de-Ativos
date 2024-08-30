@@ -7,11 +7,11 @@
 
 <h1>Usuários</h1>
 
-<p>
-    <a asp-action="Create">Adicionar Usuário</a>
+<p style="display: flex; justify-content: center; align-items: center; width: 150px; height: 35px; border-radius: 5px; background-color: #0D6EFD;">
+    <a asp-action="Create" style="align-self: center; width: 100%; border-radius: 5px; color: #ffffff; padding: 5px 0px 5px 8%;">Adicionar Usuário</a>
 </p>
 
-<input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
+<input type="search" placeholder="Pesquisa por usuário" id="barra_pesquisa" onkeyup="filtrarTabela()" />
 
 <table class="table" id="tabela">
     <thead>
@@ -62,4 +62,18 @@
         }
     </tbody>
 </table>
+
+<div>
+    @if (ViewBag.CurrentPage > 1)
+    {
+        <a asp-action="Index" asp-route-page="@(ViewBag.CurrentPage - 1)">Anterior</a>
+    }
+
+    Página @(ViewBag.CurrentPage) de @(ViewBag.TotalPages)
+
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        <a asp-action="Index" asp-route-page="@(ViewBag.CurrentPage + 1)">Próxima</a>
+    }
+</div>
 <script src="~/js/usuarios.js" asp-append-version="true"></script>

@@ -68,3 +68,21 @@ hr {
 @section Scripts {
     margin-top: 20px; /* Espaçamento superior para a seção */
 }
+
+.botao_adicionar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+}
+
+.botao_adicionar > a {
+    align-self: center;
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 0px 5px 15%;
+}

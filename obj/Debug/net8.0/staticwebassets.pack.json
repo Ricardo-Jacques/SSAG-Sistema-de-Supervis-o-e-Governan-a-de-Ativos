@@ -33,12 +33,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\images\\logoSSAG.png",
+      "PackagePath": "staticwebassets\\images\\logoSSAG.png"
+    },
+    {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\emprestimo.js",
       "PackagePath": "staticwebassets\\js\\emprestimo.js"
     },
     {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\estoque.js",
       "PackagePath": "staticwebassets\\js\\estoque.js"
+    },
+    {
+      "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\header.js",
+      "PackagePath": "staticwebassets\\js\\header.js"
     },
     {
       "Id": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\site.js",

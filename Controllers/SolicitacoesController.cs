@@ -17,9 +17,16 @@ namespace SiteMVC.Controllers
         }
 
         // GET: Solicitacoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            return View(await _context.Solicitacoes.ToListAsync());
+            int pageSize = 10;
+            var solicitacoes = await _context.Solicitacoes.OrderByDescending(solicitacao => solicitacao.IdSolicitacao).ToListAsync();
+            var paginatedSolicitacoes = solicitacoes.Skip((page - 1) * pageSize).Take(pageSize);
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = (int)Math.Ceiling(solicitacoes.Count / (double)pageSize);
+
+            return View(paginatedSolicitacoes);
         }
 
         // Aprovar solicitação

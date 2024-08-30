@@ -16,10 +16,18 @@ namespace SiteMVC.Controllers
         }
 
         // GET: Items
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            return View(await _context.Items.ToListAsync());
+            int pageSize = 10;
+            var items = await _context.Items.OrderByDescending(item => item.Id).ToListAsync();
+            var paginatedItems = items.Skip((page - 1) * pageSize).Take(pageSize);
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = (int)Math.Ceiling(items.Count / (double)pageSize);
+
+            return View(paginatedItems);
         }
+
 
         // GET: Items/Details/5
         public async Task<IActionResult> Details(int? id)

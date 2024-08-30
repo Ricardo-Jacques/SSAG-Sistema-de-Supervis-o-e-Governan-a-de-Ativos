@@ -1,6 +1,7 @@
 ﻿section.emprestimo > h2 {
     display: flex;
     justify-content: center;
+    margin: 20px 0px 10px 0px;
 }
 
 /* Estilizar o formulário de empréstimo */

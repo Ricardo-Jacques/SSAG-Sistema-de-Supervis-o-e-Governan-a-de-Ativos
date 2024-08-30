@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype'); /* Corrigido o formato */
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     font-size: 14px;
 }
@@ -19,6 +26,7 @@ html {
 
 body {
     margin-bottom: 60px;
+    font-family: 'Roboto' !important;
 }
 
 table {

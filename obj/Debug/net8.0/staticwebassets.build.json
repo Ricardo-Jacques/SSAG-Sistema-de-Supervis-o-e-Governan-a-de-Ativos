@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AuT2MB62e48379Ow8Mz2uCdxRRTv5WQneHVqf4o29P0=",
+  "Hash": "P+qyDvOuGy96EztG3fetV5U3MW/XI0y1XLHwVJOjfAk=",
   "Source": "SiteMVC",
   "BasePath": "_content/SiteMVC",
   "Mode": "Default",
@@ -188,6 +188,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\images\\logoSSAG.png",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "images/logoSSAG.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logoSSAG.png"
+    },
+    {
       "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\emprestimo.js",
       "SourceId": "SiteMVC",
       "SourceType": "Discovered",
@@ -224,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\estoque.js"
+    },
+    {
+      "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\header.js",
+      "SourceId": "SiteMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\",
+      "BasePath": "_content/SiteMVC",
+      "RelativePath": "js/header.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\header.js"
     },
     {
       "Identity": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\js\\site.js",

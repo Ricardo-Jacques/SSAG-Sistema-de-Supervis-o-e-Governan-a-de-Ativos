@@ -10,12 +10,12 @@
 
 @if (User.IsInRole("Admin"))
 {
-    <p>
+    <p class="botao_adicionar">
         <a asp-action="Create">Adicionar item</a>
     </p>
 }
 
-<input type="search" placeholder="Digite para pesquisar" id="barra_pesquisa" onkeyup="filtrarTabela()" />
+<input type="search" placeholder="Pesquisa por nome" id="barra_pesquisa" onkeyup="filtrarTabela()" />
 <select id="filtroPorEstado" onchange="filtrarTabela()">
     <option value="">Todos os estados</option>
     <option value="Disponível">Disponível</option>
@@ -47,27 +47,15 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.OrderByDescending(item => item.Id))
+        @foreach (var item in Model)
         {
             <tr class="tr">
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td class="nome">
-                    @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td class="tipo">
-                    @Html.DisplayFor(modelItem => item.Tipo)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Proprietario)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Valor)
-                </td>
-                <td class="estado">
-                    @Html.DisplayFor(modelItem => item.Estado)
-                </td>
+                <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                <td class="nome">@Html.DisplayFor(modelItem => item.Nome)</td>
+                <td class="tipo">@Html.DisplayFor(modelItem => item.Tipo)</td>
+                <td>@Html.DisplayFor(modelItem => item.Proprietario)</td>
+                <td>@Html.DisplayFor(modelItem => item.Valor)</td>
+                <td class="estado">@Html.DisplayFor(modelItem => item.Estado)</td>
                 @if (User.IsInRole("Admin"))
                 {
                     <td>
@@ -80,4 +68,19 @@
         }
     </tbody>
 </table>
+
+<div>
+    @if (ViewBag.CurrentPage > 1)
+    {
+        <a asp-action="Index" asp-route-page="@(ViewBag.CurrentPage - 1)">Anterior</a>
+    }
+
+    Página @(ViewBag.CurrentPage) de @(ViewBag.TotalPages)
+
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        <a asp-action="Index" asp-route-page="@(ViewBag.CurrentPage + 1)">Próxima</a>
+    }
+</div>
+
 <script src="~/js/estoque.js" asp-append-version="true"></script>
