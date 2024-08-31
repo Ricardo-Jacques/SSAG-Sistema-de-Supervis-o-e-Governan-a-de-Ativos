@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\wwwroot\\css\\emprestimo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:wwwroot\\css\\emprestimo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\controllers\\redefinirsenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:controllers\\redefinirsenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "emprestimo.css",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\emprestimo.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\emprestimo.css",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\emprestimo.css",
-              "RelativeToolTip": "wwwroot\\css\\emprestimo.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-30T22:26:29.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-30T22:17:15.578Z",
+              "Title": "RedefinirSenhaController.cs",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\RedefinirSenhaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RedefinirSenhaController.cs",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\RedefinirSenhaController.cs",
+              "RelativeToolTip": "Controllers\\RedefinirSenhaController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T14:33:35.882Z",
               "EditorCaption": ""
             }
           ]

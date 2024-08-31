@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Redefinir senha";
+}
+
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+<section class="login">
+
+    <h2>Confirme seu usuário e redefina sua senha:</h2>
+    <form asp-action="RedefinirSenha" method="post">
+        <div>
+            <label for="username">Usuário:</label>
+            <input type="text" name="nomeUsuario" required />
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" required />
+        </div>
+        <div>
+            <label for="password">Nova Senha:</label>
+            <input type="password" name="novaSenha" required />
+        </div>
+        <a href="/Account/login">Voltar</a>
+        <button type="submit">Redefinir senha</button>
+    </form>
+</section>

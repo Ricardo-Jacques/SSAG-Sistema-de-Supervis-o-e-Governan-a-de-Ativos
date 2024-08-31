@@ -31,6 +31,9 @@ namespace SiteMVC.Models
         [Column("tipoUsuario")]
         [Display(Name = "Tipo de usuário")]
         public string? TipoUsuario { get; set; } // "Admin" ou "User"
-     
+
+        [Column("email")]
+        [Display(Name = "E-mail")]
+        public string? Email { get; set; }
     }
 }
