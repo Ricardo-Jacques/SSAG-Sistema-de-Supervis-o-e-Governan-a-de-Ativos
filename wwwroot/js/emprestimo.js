@@ -55,8 +55,11 @@ function validarFormulario() {
     var idSelecionado = document.getElementById("idItem").value;
     if (idSelecionado === "") {
         alert("Por favor, selecione um ID.");
-        return false; // Impede o envio do formulário
+        return false;
     }
 
-    return true; // Permite o envio do formulário se todas as validações forem bem-sucedidas
+    return true;
 }
+
+//Só exibe os campos de escolha abaixo após o de cima ter um valor selecionado
+item.selecionado

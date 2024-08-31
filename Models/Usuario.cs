@@ -35,5 +35,9 @@ namespace SiteMVC.Models
         [Column("email")]
         [Display(Name = "E-mail")]
         public string? Email { get; set; }
+
+        [Column("dataNascimento")]
+        [Display(Name = "Data de Nascimento")]
+        public DateOnly? DataNascimento { get; set; }
     }
 }

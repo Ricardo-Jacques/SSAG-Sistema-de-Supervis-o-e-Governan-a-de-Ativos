@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<SiteMVC.Models.Item>
 
+@{
+    ViewData["Title"] = "Empréstimo";
+}
 <link rel="stylesheet" href="~/css/emprestimo.css" asp-append-version="true" />
 
 <section class="emprestimo">
@@ -18,7 +21,7 @@
         <div class="campo_form">
             <label for="item">Item desejado</label>
             <select id="itemDesejado" name="Item" required onchange="filtrarIds()">
-                <option value="">Selecione um item</option>
+                <option value="">Selecione o item</option>
                 @foreach (var item in Model)
                 {
                     <option value="@item.Nome" data-tipo="@item.Tipo" data-estado="@item.Estado">@item.Nome</option>
@@ -28,6 +31,7 @@
         <div class="campo_form">
             <label for="id">ID do item</label>
             <select id="idItem" name="IdItem" required>
+                <option value="">Selecione o ID</option>
                 @foreach (var item in Model)
                 {
                     <option value="@item.Id" data-item="@item.Nome" data-estado="@item.Estado">@item.Id</option>

@@ -14,21 +14,23 @@ namespace SiteMVC.Controllers
 
         public IActionResult Index()
         {
-            return View("redefinirSenha");
+            return View("Index");
         }
 
         [HttpPost]
-        public async Task<IActionResult> RedefinirSenha(string nomeUsuario, string email, string novaSenha)
+        public async Task<IActionResult> RedefinirSenha(string nomeUsuario, string email, string novaSenha, DateOnly dataNascimento)
         {
-            var user = _context.Usuario.SingleOrDefault(u => u.NomeUsuario == nomeUsuario && u.Email == email);
+            var user = _context.Usuario.SingleOrDefault(u => u.NomeUsuario == nomeUsuario && u.Email == email && u.DataNascimento == dataNascimento);
 
             if (user != null) //Caso o usuário com este E-mail seja encontrado
             {
                 user.Senha = novaSenha;
                 _context.Update(user);
                 await _context.SaveChangesAsync();
+                return RedirectToAction("Login", "Account");
             }
-            return View("Views/Account/login.cshtml");
+            TempData["MensagemErro"] = "O usuário não foi encontrado. Verifique seus dados e tente novamente!";
+            return View ("Index");
         }
     }
 }

@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\controllers\\redefinirsenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:controllers\\redefinirsenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RedefinirSenhaController.cs",
-              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\RedefinirSenhaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RedefinirSenhaController.cs",
-              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Controllers\\RedefinirSenhaController.cs",
-              "RelativeToolTip": "Controllers\\RedefinirSenhaController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T14:33:35.882Z",
-              "EditorCaption": ""
             }
           ]
         }
