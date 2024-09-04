@@ -58,7 +58,7 @@ namespace SiteMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Tipo,Proprietario,Valor,Estado")] Item item)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Tipo,Proprietario,Valor,Status")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace SiteMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Tipo,Proprietario,Valor,Estado")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Tipo,Proprietario,Valor,Status")] Item item)
         {
             if (id != item.Id)
             {

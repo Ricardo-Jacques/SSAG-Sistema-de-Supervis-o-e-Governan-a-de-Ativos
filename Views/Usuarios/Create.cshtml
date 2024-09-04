@@ -1,7 +1,7 @@
 ﻿@model SiteMVC.Models.Usuario
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Adicionar Usuário";
 }
 
 <h1>Adicionar Usuário</h1>
@@ -26,6 +26,11 @@
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataNascimento" class="control-label"></label>
+                <input asp-for="DataNascimento" class="form-control" />
+                <span asp-validation-for="DataNascimento" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Criar usuário" class="btn btn-primary" />

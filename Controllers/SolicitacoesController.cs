@@ -48,8 +48,8 @@ namespace SiteMVC.Controllers
                     await comando.ExecuteNonQueryAsync();
                 }
 
-                // Atualiza o estado do item relacionado à solicitação aprovada
-                var query2 = "UPDATE items SET estado = 'Emprestado' " +
+                // Atualiza o status do item relacionado à solicitação aprovada
+                var query2 = "UPDATE items SET status = 'Emprestado' " +
                              "WHERE id = (SELECT idItem FROM solicitacoes WHERE idSolicitacao = @id)";
 
                 using (SqlCommand comando = new SqlCommand(query2, conexao))
@@ -92,7 +92,7 @@ namespace SiteMVC.Controllers
                     await comando.ExecuteNonQueryAsync(); // Executa a consulta de forma assíncrona
                 }
 
-                var query2 = "UPDATE items SET estado = 'Disponível' " +
+                var query2 = "UPDATE items SET status = 'Disponível' " +
                               "WHERE id = (SELECT idItem FROM solicitacoes WHERE idSolicitacao = @id)";
 
                 using (SqlCommand comando = new SqlCommand(query2, conexao))

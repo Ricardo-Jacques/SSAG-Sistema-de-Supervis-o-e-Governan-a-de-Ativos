@@ -15,7 +15,7 @@ namespace SiteMVC.Controllers
             _context = context;
         }
 
-        // GET: Items
+        // GET: Usuarios
         public async Task<IActionResult> Index(int page = 1)
         {
             int pageSize = 10;
@@ -28,7 +28,7 @@ namespace SiteMVC.Controllers
             return View(paginatedUsuarios);
         }
 
-        // GET: Items/Details/5
+        // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -46,13 +46,13 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // GET: Items/Create
+        // GET: Usuarios/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Items/Create
+        // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -70,7 +70,7 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // GET: Items/Edit/5
+        // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -86,7 +86,7 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // POST: Items/Edit/5
+        // POST: Usuarios/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -102,10 +102,21 @@ namespace SiteMVC.Controllers
             {
                 try
                 {
-                    usuario.TipoUsuario = "User";
+                    var usuarioExistente = await _context.Usuario.FindAsync(usuario.IdUsuario);
 
-                    _context.Update(usuario);
-                    await _context.SaveChangesAsync();
+                    if (usuarioExistente != null)
+                    {
+                        // Atualize apenas as propriedades desejadas
+                        usuarioExistente.NomeUsuario = usuario.NomeUsuario;
+                        usuarioExistente.Email = usuario.Email;
+
+                        // Marque apenas essas duas propriedades como modificadas
+                        _context.Entry(usuarioExistente).Property(u => u.NomeUsuario).IsModified = true;
+                        _context.Entry(usuarioExistente).Property(u => u.Email).IsModified = true;
+
+                        // Salve as alterações
+                        await _context.SaveChangesAsync();
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -123,7 +134,7 @@ namespace SiteMVC.Controllers
             return View(usuario);
         }
 
-        // GET: Items/Delete/5
+        // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

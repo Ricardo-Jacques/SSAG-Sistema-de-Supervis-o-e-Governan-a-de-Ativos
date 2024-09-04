@@ -27,9 +27,13 @@ namespace SiteMVC.Models
         [Display(Name = "Valor")]
         public decimal Valor { get; set; }
 
-        [Column("estado")]
-        [Display(Name = "Estado")]
-        public string Estado { get; set; }
+        [Column("status")]
+        [Display(Name = "Status")]
+        public string Status { get; set; }
+
+        [Column("observacoes")]
+        [Display(Name = "Observações")]
+        public string Observacoes { get; set; }
         public Item()
         {
 

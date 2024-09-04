@@ -42,3 +42,10 @@ h1 {
         color: #000;
         margin: 0;
     }
+
+/* Responsividade para telas menores */
+@media(max-width: 1000px) {
+    .dashboard div {
+        width: 300px;
+    }
+}

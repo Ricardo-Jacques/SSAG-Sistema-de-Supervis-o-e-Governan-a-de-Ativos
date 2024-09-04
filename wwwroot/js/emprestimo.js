@@ -3,6 +3,12 @@
     var itemDesejado = document.getElementById("itemDesejado");
     var itens = itemDesejado.options;
 
+    if (tipoSelecionado !== "") {
+        itemDesejado.style.display = "block"; // Exibe o campo "item desejado"
+    } else {
+        itemDesejado.style.display = "none"; // Oculta o campo "item desejado"
+    }
+
     for (var i = 0; i < itens.length; i++) {
         var tipoItem = itens[i].getAttribute("data-tipo");
 
@@ -21,6 +27,12 @@ function filtrarIds() {
     var idItem = document.getElementById("idItem");
     var ids = idItem.options;
 
+    if (itemSelecionado !== "") {
+        idItem.style.display = "block"; // Exibe o campo "idItem"
+    } else {
+        idItem.style.display = "none"; // Oculta o campo "idItem"
+    }
+
     for (var i = 0; i < ids.length; i++) {
         var nomeItem = ids[i].getAttribute("data-item");
 
@@ -33,6 +45,7 @@ function filtrarIds() {
 
     idItem.selectedIndex = 0;
 }
+
 
 function validarFormulario() {
     // Validação de tipo
@@ -60,6 +73,3 @@ function validarFormulario() {
 
     return true;
 }
-
-//Só exibe os campos de escolha abaixo após o de cima ter um valor selecionado
-item.selecionado

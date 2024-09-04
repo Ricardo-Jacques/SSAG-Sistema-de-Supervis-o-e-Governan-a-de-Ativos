@@ -20,21 +20,21 @@
         </div>
         <div class="campo_form">
             <label for="item">Item desejado</label>
-            <select id="itemDesejado" name="Item" required onchange="filtrarIds()">
+            <select id="itemDesejado" name="Item" required onchange="filtrarIds()" style="display: none;">
                 <option value="">Selecione o item</option>
                 @foreach (var item in Model)
                 {
-                    <option value="@item.Nome" data-tipo="@item.Tipo" data-estado="@item.Estado">@item.Nome</option>
+                    <option value="@item.Nome" data-tipo="@item.Tipo" data-estado="@item.Status">@item.Nome</option>
                 }
             </select>
         </div>
         <div class="campo_form">
             <label for="id">ID do item</label>
-            <select id="idItem" name="IdItem" required>
+            <select id="idItem" name="IdItem" required style="display: none;">
                 <option value="">Selecione o ID</option>
                 @foreach (var item in Model)
                 {
-                    <option value="@item.Id" data-item="@item.Nome" data-estado="@item.Estado">@item.Id</option>
+                    <option value="@item.Id" data-item="@item.Nome" data-estado="@item.Status">@item.Id</option>
                 }
             </select>
         </div>

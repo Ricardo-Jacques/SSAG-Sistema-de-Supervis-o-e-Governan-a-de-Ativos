@@ -17,17 +17,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    min-width: 750px;
     list-style: none;
     padding: 0px 0px 0px 10px;
     margin: 0px;
 }
 
-.nav_header > a {
-    font-size: 1.3em;
-    color: #000000;
-    text-decoration: none;
-}
+    .nav_header > a {
+        font-size: 1.3em;
+        color: #000000;
+        text-decoration: none;
+    }
 
 .nav_header2 > a {
     font-size: 1.3em;
@@ -36,7 +36,7 @@
 }
 
 div.direita_header {
-    width: 50%;
+    width: 330px;
     display: flex;
     justify-content: flex-end;
 }
@@ -53,10 +53,10 @@ div.direita_header {
     cursor: pointer;
 }
 
-.perfil > div > h2 {
-    font-size: 1.3em;
-    margin: 0;
-}
+    .perfil > div > h2 {
+        font-size: 1.3em;
+        margin: 0;
+    }
 
 form#botaologin {
     padding: 0 !important;
@@ -79,3 +79,27 @@ div.direita_header2 {
     display: flex;
     justify-content: flex-end;
 }
+
+/* Responsividade para telas menores */
+@media(max-width: 1000px) {
+    .logo_ssag {
+        width: 90px;
+        height: 100px;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .nav_header {
+        min-width: 580px;
+    }
+
+    .nav_header > a {
+        font-size: 1em;
+    }
+
+    .perfil > div > h2 {
+        font-size: 1.1em;
+    }
+
+    div.direita_header {
+        width: 180px;
+    }

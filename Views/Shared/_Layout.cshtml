@@ -13,11 +13,11 @@
     @if (Context.Request.Path != "/Account/login" && Context.Request.Path != "/RedefinirSenha/Index" && Context.Request.Path != "/RedefinirSenha/RedefinirSenha")
     {
         <header>
-            <img src="~/images/logoSSAG.png" alt="Logo do sistema" class="logo_ssag">
             <nav>
                 <ul class="nav_header">
                     @if (User.IsInRole("Admin"))
                     {
+                        <img src="~/images/logoSSAG.png" alt="Logo do sistema" class="logo_ssag">
                         <a asp-controller="Dashboard" asp-action="index">Dashboard</a>
                         <a asp-controller="Usuarios" asp-action="index">Usuários</a>
                         <a asp-controller="Solicitacoes" asp-action="index">Solicitações</a>

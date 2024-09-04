@@ -42,7 +42,7 @@
                 @Html.DisplayNameFor(model => model.Valor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Estado)
+                @Html.DisplayNameFor(model => model.Status)
             </th>
         </tr>
     </thead>
@@ -55,7 +55,7 @@
                 <td class="tipo">@Html.DisplayFor(modelItem => item.Tipo)</td>
                 <td>@Html.DisplayFor(modelItem => item.Proprietario)</td>
                 <td>@Html.DisplayFor(modelItem => item.Valor)</td>
-                <td class="estado">@Html.DisplayFor(modelItem => item.Estado)</td>
+                <td class="estado">@Html.DisplayFor(modelItem => item.Status)</td>
                 @if (User.IsInRole("Admin"))
                 {
                     <td>
