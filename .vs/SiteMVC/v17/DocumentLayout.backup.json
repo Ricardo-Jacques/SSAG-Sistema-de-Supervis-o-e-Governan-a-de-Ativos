@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Master\\source\\repos\\SiteMVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\wwwroot\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:wwwroot\\css\\header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|c:\\users\\master\\source\\repos\\sitemvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B7274A6-22AD-4E78-8803-CE3F27113D38}|SiteMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "header.css",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\header.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\header.css",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\wwwroot\\css\\header.css",
+              "RelativeToolTip": "wwwroot\\css\\header.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-08T20:27:57.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Master\\source\\repos\\SiteMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T20:21:18.044Z",
+              "EditorCaption": ""
             }
           ]
         }

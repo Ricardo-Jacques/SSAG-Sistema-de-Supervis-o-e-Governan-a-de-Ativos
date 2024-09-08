@@ -15,9 +15,9 @@
         <header>
             <nav>
                 <ul class="nav_header">
+                    <img src="~/images/logoSSAG.png" alt="Logo do sistema" class="logo_ssag">
                     @if (User.IsInRole("Admin"))
-                    {
-                        <img src="~/images/logoSSAG.png" alt="Logo do sistema" class="logo_ssag">
+                    { 
                         <a asp-controller="Dashboard" asp-action="index">Dashboard</a>
                         <a asp-controller="Usuarios" asp-action="index">Usuários</a>
                         <a asp-controller="Solicitacoes" asp-action="index">Solicitações</a>
