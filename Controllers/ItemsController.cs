@@ -58,7 +58,7 @@ namespace SiteMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Tipo,Proprietario,Valor,Status")] Item item)
+        public async Task<IActionResult> Create(Item item)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace SiteMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Tipo,Proprietario,Valor,Status")] Item item)
+        public async Task<IActionResult> Edit(int id, Item item)
         {
             if (id != item.Id)
             {
@@ -99,9 +99,11 @@ namespace SiteMVC.Controllers
 
             if (ModelState.IsValid)
             {
+                item.Status = "Disponível";
                 try
                 {
                     _context.Update(item);
+                    // Salve as alterações
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

@@ -66,7 +66,7 @@ namespace SiteMVC.Controllers
 
                         comando.ExecuteNonQuery();
                     }
-
+                    TempData["SuccessMessage"] = "Empréstimo solicitado com sucesso!";
                     return RedirectToAction("Index");
                 }
 
